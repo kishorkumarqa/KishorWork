@@ -63,7 +63,9 @@ public class Tatoc {
 
 		Iterator itr = (Iterator) windows.iterator();
 		while(itr.next() != null)
-		{	
+			
+		{
+			childWindow= driver.getWindowHandles();
 		}
 		driver.switchTo().window(childWindow);
 		driver.findElement(By.id("name")).sendKeys("hello");
